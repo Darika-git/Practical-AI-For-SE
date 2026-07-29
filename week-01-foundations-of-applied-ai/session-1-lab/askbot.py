@@ -29,11 +29,11 @@ MODEL = os.environ.get("LLM_MODEL", "llama-3.3-70b-versatile")
 #   Goal: send one prompt, print the reply.
 # ===========================================================================
 def ask_once(prompt: str) -> str:
-    # TODO(1a): call client.chat.completions.create(...) with:
-    #   - model=MODEL
-    #   - messages=[{"role": "user", "content": prompt}]
-    # TODO(1b): return the reply text (response.choices[0].message.content)
-    raise NotImplementedError("Implement ask_once()")
+    response = client.chat.completions.create(
+        model=MODEL,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return response.choices[0].message.content
 
 
 # ===========================================================================
