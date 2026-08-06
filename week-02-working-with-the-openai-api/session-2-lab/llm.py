@@ -41,9 +41,19 @@ class ConfigurationError(LLMError):
 
 
 class InvalidRequestError(LLMError):
-    """Terminal — the request itself is malformed (e.g. context too large)."""
+    """Terminal — the request itself is malformed (e.g. invalid parameters)."""
 
     user_message = "The request could not be processed. Please adjust your input."
+
+
+class ContextLengthError(LLMError):
+    """Terminal — the request is too large for the model's context window.
+    Retrying will not help; the user must reduce input or history."""
+
+    user_message = (
+        "Error: the conversation is too long for the model.\n"
+        "Please clear history (/clear) or lower --max-tokens."
+    )
 
 
 class RateLimitError(LLMError):
@@ -165,13 +175,13 @@ class LLMService:
                 )
             except LLMError as err:
                 # Configuration/request errors are terminal — do NOT retry.
-                if isinstance(err, (ConfigurationError, InvalidRequestError)):
+                if isinstance(err, (ConfigurationError, InvalidRequestError, ContextLengthError)):
                     raise
                 self._sleep_or_raise(err, attempt)
                 attempt += 1
             except Exception as raw:  # noqa: BLE001 — classify SDK/network errors
                 err = self._classify_error(raw)
-                if isinstance(err, (ConfigurationError, InvalidRequestError)):
+                if isinstance(err, (ConfigurationError, InvalidRequestError, ContextLengthError)):
                     raise err
                 self._sleep_or_raise(err, attempt)
                 attempt += 1
@@ -198,7 +208,9 @@ class LLMService:
             return ConfigurationError()
         if "ratelimit" in name or "rate limit" in text or "429" in text:
             return RateLimitError()
-        if "badrequest" in name or "invalidrequest" in name or "context length" in text:
+        if "context length" in text or "maximum context" in text:
+            return ContextLengthError()
+        if "badrequest" in name or "invalidrequest" in name:
             return InvalidRequestError()
         if any(k in name for k in ("timeout", "connection", "apierror", "internalserver")):
             return ServiceUnavailableError()

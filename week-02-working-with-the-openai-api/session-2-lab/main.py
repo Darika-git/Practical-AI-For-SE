@@ -17,7 +17,7 @@ import argparse
 import sys
 
 import config
-from llm import LLMService, LLMError, ConfigurationError
+from llm import LLMService, LLMError, ConfigurationError, ContextLengthError
 
 # Load variables from a local .env file if python-dotenv is available (R9).
 try:
