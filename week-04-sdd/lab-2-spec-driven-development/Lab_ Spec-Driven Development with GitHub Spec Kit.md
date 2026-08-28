@@ -1,9 +1,9 @@
 # Lab: Spec-Driven Development with GitHub Spec Kit
 
-**Course:** AI-Enabled Software Development / Software Engineering  
-**Lab Topic:** Spec-Driven Development (SDD)  
-**Tool:** GitHub Spec Kit  
-**Duration:** 3 Hours  
+**Course:** AI-Enabled Software Development / Software Engineering
+**Lab Topic:** Spec-Driven Development (SDD)
+**Tool:** GitHub Spec Kit
+**Duration:** 3 Hours
 **Mode:** Individual or Pair Work
 
 ---
@@ -110,12 +110,12 @@ The important idea is:
 
 You need:
 
-- Git
-- A code editor
-- `uv`
-- GitHub Spec Kit
-- An AI coding agent supported by your environment
-- An existing application or starter project
+* Git
+* A code editor
+* `uv`
+* GitHub Spec Kit
+* An AI coding agent supported by your environment
+* An existing application or starter project
 
 Check Git:
 
@@ -167,9 +167,9 @@ Spend a few minutes exploring the available commands.
 
 Write down two things that `specify` can do besides initializing a project.
 
-1. ____________________________________________
+1. ---
 
-2. ____________________________________________
+2. ---
 
 ---
 
@@ -260,15 +260,15 @@ Not every feature necessarily produces every supporting artifact.
 
 Locate the files or folders related to:
 
-| Artifact | Purpose |
-|---|---|
-| `.specify/` | Spec Kit configuration and supporting resources |
-| Constitution | Project-wide engineering principles |
-| `spec.md` | Functional requirements and user expectations |
-| `plan.md` | Technical implementation approach |
-| `tasks.md` | Actionable implementation work |
-| `contracts/` | Interfaces/API contracts when applicable |
-| `data-model.md` | Data structures when applicable |
+| Artifact        | Purpose                                         |
+| --------------- | ----------------------------------------------- |
+| `.specify/`     | Spec Kit configuration and supporting resources |
+| Constitution    | Project-wide engineering principles             |
+| `spec.md`       | Functional requirements and user expectations   |
+| `plan.md`       | Technical implementation approach               |
+| `tasks.md`      | Actionable implementation work                  |
+| `contracts/`    | Interfaces/API contracts when applicable        |
+| `data-model.md` | Data structures when applicable                 |
 
 ### Checkpoint
 
@@ -280,15 +280,15 @@ Write your answer:
 
 **spec.md**
 
-____________________________________________________________
+---
 
 **plan.md**
 
-____________________________________________________________
+---
 
 **tasks.md**
 
-____________________________________________________________
+---
 
 ---
 
@@ -335,18 +335,18 @@ Open the generated constitution.
 Identify at least three rules that could affect future implementation.
 
 | Principle | How might this affect implementation? |
-|---|---|
-| 1. | |
-| 2. | |
-| 3. | |
+| --------- | ------------------------------------- |
+| 1.        |                                       |
+| 2.        |                                       |
+| 3.        |                                       |
 
 ### Think
 
 Why should the constitution be created **before** the feature plan?
 
-____________________________________________________________
+---
 
-____________________________________________________________
+---
 
 ---
 
@@ -360,23 +360,23 @@ The feature must be possible to implement during the lab.
 
 Good examples:
 
-- Search notes
-- Add items to favorites
-- Filter tasks by status
-- User profile editing
-- Dark mode preference
-- Export records to CSV
-- Password visibility toggle
-- Add comments to a post
-- Search students by name
-- Mark notifications as read
+* Search notes
+* Add items to favorites
+* Filter tasks by status
+* User profile editing
+* Dark mode preference
+* Export records to CSV
+* Password visibility toggle
+* Add comments to a post
+* Search students by name
+* Mark notifications as read
 
 Avoid very large features such as:
 
-- Build an entire authentication system
-- Build an e-commerce application
-- Build an entire social network
-- Build a complete AI chatbot platform
+* Build an entire authentication system
+* Build an e-commerce application
+* Build an entire social network
+* Build a complete AI chatbot platform
 
 Write your feature:
 
@@ -400,11 +400,11 @@ Describe the feature from the **user's perspective**.
 
 Focus on:
 
-- Who needs the feature?
-- What should they be able to do?
-- Why do they need it?
-- What behavior should they observe?
-- What counts as success?
+* Who needs the feature?
+* What should they be able to do?
+* Why do they need it?
+* What behavior should they observe?
+* What counts as success?
 
 Avoid telling the AI exactly how to implement it.
 
@@ -447,12 +447,12 @@ Open the generated specification.
 
 Look for:
 
-- User stories
-- Functional requirements
-- Acceptance scenarios
-- Edge cases
-- Success criteria
-- Assumptions
+* User stories
+* Functional requirements
+* Acceptance scenarios
+* Edge cases
+* Success criteria
+* Assumptions
 
 ### Specification Review
 
@@ -460,21 +460,21 @@ Answer:
 
 **1. Who is the user?**
 
-____________________________________________________________
+---
 
 **2. What problem are they trying to solve?**
 
-____________________________________________________________
+---
 
 **3. List two acceptance criteria.**
 
-1. _________________________________________________________
+1. ---
 
-2. _________________________________________________________
+2. ---
 
 **4. Find one requirement that could still be interpreted differently by two developers.**
 
-____________________________________________________________
+---
 
 That ambiguity is what we will address next.
 
@@ -502,13 +502,13 @@ For every question, consider:
 
 Example clarification questions might concern:
 
-- What happens when no results exist?
-- Is search case-sensitive?
-- Who has permission?
-- What happens when the network fails?
-- How much data should be shown?
-- Should deleted records appear?
-- What does "fast" actually mean?
+* What happens when no results exist?
+* Is search case-sensitive?
+* Who has permission?
+* What happens when the network fails?
+* How much data should be shown?
+* Should deleted records appear?
+* What does "fast" actually mean?
 
 Respond to the clarification questions.
 
@@ -517,20 +517,20 @@ Then inspect the updated specification.
 ### Record Three Clarifications
 
 | Before Clarification | Decision |
-|---|---|
-| | |
-| | |
-| | |
+| -------------------- | -------- |
+|                      |          |
+|                      |          |
+|                      |          |
 
 ### Reflection
 
 Which clarification would have caused the biggest implementation problem if it had not been resolved?
 
-____________________________________________________________
+---
 
 Why?
 
-____________________________________________________________
+---
 
 ---
 
@@ -595,19 +595,19 @@ Answer:
 
 **What files/components are expected to change?**
 
-____________________________________________________________
+---
 
 **Does the feature require database changes?**
 
-____________________________________________________________
+---
 
 **Does it introduce an API?**
 
-____________________________________________________________
+---
 
 **What testing strategy is proposed?**
 
-____________________________________________________________
+---
 
 ---
 
@@ -652,19 +652,19 @@ Find:
 
 **One setup task**
 
-____________________________________________________________
+---
 
 **One implementation task**
 
-____________________________________________________________
+---
 
 **One testing task**
 
-____________________________________________________________
+---
 
 **One task that depends on another task**
 
-____________________________________________________________
+---
 
 ---
 
@@ -723,11 +723,11 @@ Did `/speckit.analyze` identify any issues?
 
 If yes, record one:
 
-____________________________________________________________
+---
 
 How did you resolve it?
 
-____________________________________________________________
+---
 
 If necessary, update your specification, plan, or tasks before moving forward.
 
@@ -739,12 +739,12 @@ Do **not** execute `/speckit.implement` yet.
 
 Ask yourself:
 
-- Does the specification describe the feature clearly?
-- Have important ambiguities been resolved?
-- Does the plan satisfy the specification?
-- Does the task list implement the plan?
-- Are important acceptance criteria testable?
-- Did the analysis identify unresolved inconsistencies?
+* Does the specification describe the feature clearly?
+* Have important ambiguities been resolved?
+* Does the plan satisfy the specification?
+* Does the task list implement the plan?
+* Are important acceptance criteria testable?
+* Did the analysis identify unresolved inconsistencies?
 
 Only proceed when the artifacts agree.
 
@@ -768,12 +768,12 @@ Do not treat the process as magic.
 
 Watch:
 
-- Which task is being implemented?
-- Which files are modified?
-- Whether tests are created.
-- Whether the constitution is followed.
-- Whether tasks are completed in the expected order.
-- Whether the implementation matches the specification.
+* Which task is being implemented?
+* Which files are modified?
+* Whether tests are created.
+* Whether the constitution is followed.
+* Whether tasks are completed in the expected order.
+* Whether the implementation matches the specification.
 
 ---
 
@@ -814,11 +814,11 @@ spec.md
 For each important requirement, check the actual application.
 
 | Requirement / Acceptance Criterion | Pass | Fail | Evidence |
-|---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+| ---------------------------------- | ---- | ---- | -------- |
+|                                    |      |      |          |
+|                                    |      |      |          |
+|                                    |      |      |          |
+|                                    |      |      |          |
 
 If something fails, determine whether the problem came from:
 
@@ -860,23 +860,23 @@ Pick **one requirement** from your project and trace it through the development 
 
 ### Requirement
 
-____________________________________________________________
+---
 
 ### Where is it represented in the plan?
 
-____________________________________________________________
+---
 
 ### Which task implements it?
 
-____________________________________________________________
+---
 
 ### Which code implements it?
 
-____________________________________________________________
+---
 
 ### How is it tested or verified?
 
-____________________________________________________________
+---
 
 This is called **traceability**.
 
@@ -921,18 +921,18 @@ Use it to generate a quality checklist for your feature.
 
 For example, consider:
 
-- Requirements completeness
-- Security
-- UX
-- Accessibility
-- API consistency
-- Testing expectations
+* Requirements completeness
+* Security
+* UX
+* Accessibility
+* API consistency
+* Testing expectations
 
 Compare the checklist with your current specification.
 
 Did it reveal something that your original specification missed?
 
-____________________________________________________________
+---
 
 ---
 
@@ -948,7 +948,7 @@ Use it to assess whether the implementation and SDD artifacts have converged or 
 
 Record anything it discovers:
 
-____________________________________________________________
+---
 
 ---
 
@@ -958,15 +958,15 @@ Answer each question briefly.
 
 ## 1. Before this lab, how would you normally implement this feature?
 
-____________________________________________________________
+---
 
-____________________________________________________________
+---
 
 ## 2. What changed when you were forced to specify the feature before coding?
 
-____________________________________________________________
+---
 
-____________________________________________________________
+---
 
 ## 3. Which command had the greatest effect on implementation quality?
 
@@ -982,33 +982,33 @@ ____________________________________________________________
 
 Why?
 
-____________________________________________________________
+---
 
-____________________________________________________________
+---
 
 ## 4. What ambiguity did `/speckit.clarify` expose that you might otherwise have ignored?
 
-____________________________________________________________
+---
 
-____________________________________________________________
+---
 
 ## 5. Did `/speckit.analyze` identify anything that humans or the AI had missed?
 
-____________________________________________________________
+---
 
-____________________________________________________________
+---
 
 ## 6. What is one disadvantage or cost of adopting SDD?
 
-____________________________________________________________
+---
 
-____________________________________________________________
+---
 
 ## 7. For what kind of development work do you think SDD would be most useful?
 
-____________________________________________________________
+---
 
-____________________________________________________________
+---
 
 ---
 
@@ -1032,17 +1032,17 @@ Your Git history should show the completed feature.
 
 # Assessment Rubric
 
-| Criteria | Weight |
-|---|---:|
-| Project constitution establishes meaningful engineering principles | 10% |
-| Specification clearly defines user needs and acceptance criteria | 20% |
-| Ambiguities are identified and resolved | 10% |
-| Technical plan appropriately translates requirements into architecture | 15% |
-| Tasks are clear, actionable, and traceable to the plan | 10% |
-| Analysis is performed and inconsistencies are addressed | 10% |
-| Implementation satisfies the specification | 15% |
-| Validation, testing, and reflection | 10% |
-| **Total** | **100%** |
+| Criteria                                                               |   Weight |
+| ---------------------------------------------------------------------- | -------: |
+| Project constitution establishes meaningful engineering principles     |      10% |
+| Specification clearly defines user needs and acceptance criteria       |      20% |
+| Ambiguities are identified and resolved                                |      10% |
+| Technical plan appropriately translates requirements into architecture |      15% |
+| Tasks are clear, actionable, and traceable to the plan                 |      10% |
+| Analysis is performed and inconsistencies are addressed                |      10% |
+| Implementation satisfies the specification                             |      15% |
+| Validation, testing, and reflection                                    |      10% |
+| **Total**                                                              | **100%** |
 
 ---
 
